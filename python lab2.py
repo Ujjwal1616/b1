@@ -329,43 +329,35 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 31,
    "id": "f4323afa-746a-4aff-a6d4-3458608dffa1",
    "metadata": {},
    "outputs": [
     {
-     "ename": "TypeError",
-     "evalue": "%d format: a real number is required, not str",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
-      "Cell \u001b[1;32mIn[27], line 3\u001b[0m\n\u001b[0;32m      1\u001b[0m name \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mAlice\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m      2\u001b[0m age \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m20\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m----> 3\u001b[0m \u001b[38;5;28mprint\u001b[39m((\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mMy name is \u001b[39m\u001b[38;5;132;01m%s\u001b[39;00m\u001b[38;5;124m and I am \u001b[39m\u001b[38;5;132;01m%d\u001b[39;00m\u001b[38;5;124m years old\u001b[39m\u001b[38;5;124m\"\u001b[39m)\u001b[38;5;241m%\u001b[39m(name, age))\n",
-      "\u001b[1;31mTypeError\u001b[0m: %d format: a real number is required, not str"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My name is Alice and I am 20 years old\n"
      ]
     }
    ],
    "source": [
     "name = \"Alice\"\n",
-    "age = \"20\"\n",
-    "print((\"My name is %s and I am %d years old\")%(name, age))"
+    "age = 20\n",
+    "print(\"My name is %s and I am %d years old\" % (name, age))\n"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 95,
+   "execution_count": 33,
    "id": "e70922e6-17bf-4693-92d1-fb0e173d7cb4",
    "metadata": {},
    "outputs": [
     {
-     "ename": "TypeError",
-     "evalue": "'str' object is not callable",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
-      "Cell \u001b[1;32mIn[95], line 2\u001b[0m\n\u001b[0;32m      1\u001b[0m stringWithPlaceholder \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mhi \u001b[39m\u001b[38;5;132;01m{}\u001b[39;00m\u001b[38;5;124m class\u001b[39m\u001b[38;5;132;01m{}\u001b[39;00m\u001b[38;5;124m\"\u001b[39m\n\u001b[1;32m----> 2\u001b[0m \u001b[38;5;28mprint\u001b[39m(stringWithPlaceholder\u001b[38;5;241m.\u001b[39mformat(name,str2))\n",
-      "\u001b[1;31mTypeError\u001b[0m: 'str' object is not callable"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hi Alice classClass\n"
      ]
     }
    ],
@@ -380,9 +372,7 @@
    "id": "8f73e497-8263-458f-8ea8-ee65d44a6712",
    "metadata": {},
    "outputs": [],
-   "source": [
-    "print()"
-   ]
+   "source": []
   },
   {
    "cell_type": "code",
